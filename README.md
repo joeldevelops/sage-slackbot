@@ -1,3 +1,6 @@
+# Sage Bot
+This is a nifty slack bot that will give you random sagely advice anytime you run the `/advice` command. This bot is built on the [Advice API](https://api.adviceslip.com/#endpoint-random).
+
 # Getting Started
 This documentation has instructions on how to get a very basic bot setup in your local environment. It is by no means complete, but should result in a functioning bot and local development environment.
 
