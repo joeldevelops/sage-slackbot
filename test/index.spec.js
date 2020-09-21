@@ -23,6 +23,6 @@ describe('index.js', () => {
     sageBot.start.mockImplementationOnce(() => Promise.resolve());
 
     require('../index');
-    await expect(sageBot.start.mock.calls[0][0]).toEqual("3000");
+    await expect(sageBot.start.mock.calls[0][0]).toBeTruthy();
   });
 });
