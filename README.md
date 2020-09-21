@@ -70,3 +70,6 @@ Navigate to OAuth & Permissions under the Features navigation menu, and click on
 Finally, we can open slack to our workspace and run the `/advice` command!
 
 <img src="images/sage-bot.png"><br>
+
+## Step 4: Build/Deploy Pipeline
+As of right now this is not integrated into the codebase. However, it would be trivial to setup Terraform or TravisCI to build/deploy this code to an AWS Lambda + API Gateway

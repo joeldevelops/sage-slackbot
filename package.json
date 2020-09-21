@@ -4,7 +4,9 @@
   "description": "An implementation of a sagely bot for slack that gives random advice",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start:dev": "nodemon index.js",
+    "start": "node .",
+    "test": "jest"
   },
   "author": "Joel Milligan",
   "license": "ISC",
@@ -13,5 +15,8 @@
     "axios": "^0.20.0",
     "dotenv": "^8.2.0",
     "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2"
   }
 }
