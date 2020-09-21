@@ -7,17 +7,17 @@ This is a nifty slack bot that will give you random sagely advice anytime you ru
 This documentation has instructions on how to get a very basic bot setup in your local environment. It is by no means complete, but should result in a functioning bot and local development environment.
 
 ## Step 1: Install Requirements
-Before doing anything else we must clone this repo, and navigate to its parent directory so that we can leverage the boilerplate code that has be written for us.
+Before doing anything else we must clone this repo onto our local drives.
 ```
 git clone https://github.com/joelsalt/sage-slackbot.git
 ```
 
-For local development efforts a public url will be needed. The easiest way to do this with the least amount of latency would be to use a tool like ngrock or localtunnel. For these instructions, we will be using localtunnel. Use the command below if you have node installed.
+For local development efforts a public url will be needed. The easiest way to do this with the least amount of latency would be to use a tool like ngrock or localtunnel. For these instructions, we will be using localtunnel. Use the command below if you have [NodeJS](https://nodejs.org/en/) installed.
 ```
 npm install -g localtunnel
 ```
 
-Now that we have the ability to expose our bot using a public url we need to install our bot requirements. We will be using NodeJS to run this bot, and npm to install our dependencies. Once NodeJS is installed please install dependencies.
+Now that we have the ability to expose our bot using a public url we need to install our bot requirements. We will be using NodeJS to run this bot, and npm to install our dependencies.
 ```
 npm i
 ```
@@ -34,12 +34,12 @@ BOT_NAME=sage-bot
 ```
 
 ## Step 2: Start Slack Bot
-To start our bot locally we simply need to run our `npm start` command. Below to ensure that we are running in the environment we installed our requirements on we activate that environment.
+To start our bot locally we simply need to run our `npm start` command.
 ```
 npm start
 ```
 
-Our bot is running on port 300 (or whichever port we defined in our `.env` file), so in a new terminal window we need to run localtunnel
+Our bot is running on port 3000 (or whichever port we defined in our `.env` file), so in a new terminal window we need to run localtunnel
 ```
 lt --port <BOT PORT>
 ```
@@ -53,7 +53,7 @@ Now that we've got our new bot app, we'll need to add the permissions we're goin
 
 <img src="images/oauth-scopes.png"><br>
 
-Following the creation of the bot we then want to add slash command functionality to this bot. This allows users to interact with our bot via a predefined slash command. We do this by navigating to the Slash Commands link under Features. After which we will click the Create New Command button. Once we are prompted to enter information for this command we will be using the slash command /advice. The next field is where our localtunnel url comes into play. For the Request URL provide that url in that field. After which provide a Short Description and Usage Hint before submitting the new slash command.
+Following the creation of the bot we then want to add slash command functionality to this bot. This allows users to interact with our bot via a predefined slash command. We do this by navigating to the Slash Commands link under Features. After which we will click the Create New Command button. Once we are prompted to enter information for this command we will be using the slash command /advice. For the Request URL provide the localtunnel url in that field. After which provide a Short Description and an optional Usage Hint before submitting the new slash command.
 
 NOTE that the full request url should look like so:
 ```

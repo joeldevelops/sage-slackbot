@@ -18,4 +18,11 @@ describe('index.js', () => {
     require('../index');
     await expect(sageBot.start).toHaveBeenCalled();
   });
+
+  test('should supply a port argument to the .start method', async () => {
+    sageBot.start.mockImplementationOnce(() => Promise.resolve());
+
+    require('../index');
+    await expect(sageBot.start.mock.calls[0][0]).toEqual("3000");
+  });
 });
