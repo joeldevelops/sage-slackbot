@@ -1,6 +1,8 @@
 # Sage Bot
 This is a nifty slack bot that will give you random sagely advice anytime you run the `/advice` command. This bot is built on the [Advice API](https://api.adviceslip.com/#endpoint-random).
 
+<img src="images/quote.png"><br>
+
 # Getting Started
 This documentation has instructions on how to get a very basic bot setup in your local environment. It is by no means complete, but should result in a functioning bot and local development environment.
 
@@ -74,5 +76,10 @@ Finally, we can open slack to our workspace and run the `/advice` command!
 
 <img src="images/sage-bot.png"><br>
 
-## Step 4: Build/Deploy Pipeline
+## Step 5: Build/Deploy Pipeline
 As of right now this is not integrated into the codebase. However, it would be trivial to setup Terraform or TravisCI to build/deploy this code to an AWS Lambda + API Gateway
+
+# Testing
+```bash
+npm test
+```

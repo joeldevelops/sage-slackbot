@@ -1,3 +1,5 @@
+// TODO: Instead of writing a test for this file, implement validation logic
+// to ensure that configuration values are of the expected type.
 const config = {
   botName: process.env.BOT_NAME|| 'sage-bot',
   token: process.env.TOKEN,
